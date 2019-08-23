@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4189de</color>
+    <color name="colorPrimaryDark">#4d7198</color>
+    <color name="colorAccent">#4189de</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorCursor">#ff7257</color>
+    <color name="colorVideoCard">#68ab68</color>
+    <color name="colorVideoCards">#4189de</color>
+    <color name="colorSuperPC">#ef4c83</color>
+    <color name="colorServerVK">#792dc5</color>
+    <color name="colorQuantumPC">#ff3943</color>
+    <color name="colorDataCenter">#080697</color>
+    <color name="colorBackgroundAlpha">#53C9C9C9</color>
+</resources>
+
+

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_background"
+                            android:contentDescription="@string/title_main"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/title_main"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"/>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/edit_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:padding="15dp"
+                        android:src="@drawable/edit" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp" android:layout_marginTop="5dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_sector">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/grid_cursor"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/cursor_value_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_button"
+                            android:paddingStart="6dp"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="3dp"
+                            android:text="x0"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_sector">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/grid_videocard"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/videocard_value_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_button"
+                            android:paddingStart="6dp"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="3dp"
+                            android:text="x0"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_sector">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/grid_videocards"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/videocards_value_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_button"
+                            android:paddingStart="6dp"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="3dp"
+                            android:text="x0"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_sector">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/grid_super_pc"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/super_computer_value_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_button"
+                            android:paddingStart="6dp"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="3dp"
+                            android:text="x0"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_sector">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/grid_server_vk"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/server_value_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_button"
+                            android:paddingStart="6dp"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="3dp"
+                            android:text="x0"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_sector">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/grid_quantum_pc"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/quantum_computer_value_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_button"
+                            android:paddingStart="6dp"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="3dp"
+                            android:text="x0"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="5dp" android:layout_marginTop="5dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_sector">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:contentDescription="imag"
+                                android:src="@drawable/grid_datacenter"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/datacenter_value_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_button"
+                            android:paddingStart="6dp"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="3dp"
+                            android:text="x0"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/more_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/background_calculator"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="20dp"
+                        android:text="Подробнее"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/calculator_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_calculator"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="20dp"
+                        android:text="Расчёт"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/help_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/background_calculator"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="20dp"
+                        android:text="Реклама"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/background_group">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выгодная покупка:"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/background_sector">
+
+                        <ImageView
+                            android:id="@+id/best_bay_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/grid_server_vk" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/best_bay_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:text="Датацентр"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/pay_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="200dp"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:text="Купить!" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
