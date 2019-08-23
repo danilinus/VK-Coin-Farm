@@ -11,7 +11,11 @@ In the near future I do not plan to replenish this list. If there is a platform 
 The full source code is available here from GitHub:
 
 * Clone the source: ``` git clone https://github.com/danilinus/VK-Coin-Farm.git ```
-* It is recommended to use **Android Studio**.
+* It is recommended to use [**Android Studio**](https://developer.android.com).
+
+## Libraries
+
+In this project I use [**Appodeal**](https://www.appodeal.com) for ads in app.
 
 ## Release
 You can download the finished application from
